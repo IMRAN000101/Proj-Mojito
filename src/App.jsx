@@ -1,4 +1,5 @@
-// import React from 'react'
+
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import gsap from 'gsap'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -7,10 +8,7 @@ import About from './components/About'
 import Art from './components/Art'
 import Menu from './components/Menu'
 import Contact from './components/Contact'
-// import { useGSAP } from '@gsap/react'
-// import {ScrollTrigger, splitText} from 'gsap/all'
 
-// gsap.registerPlugin(scrollTrigger, splitText)
 
 const App = () => {
   return (
