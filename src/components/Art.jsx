@@ -7,11 +7,11 @@ import { useMediaQuery } from 'react-responsive'
 const Art = () => {
     const isMobile = useMediaQuery({maxWidth:767})
     useGSAP(()=>{
-        const start = isMobile ? 'top 20%' : 'top top';
+        const startAnimation = isMobile ? 'top 20%' : 'top top';
         const maskedTimeline = gsap.timeline({
             scrollTrigger:{
                 trigger:"#art",
-                start:start,
+                start:startAnimation,
                 end: 'bottom end',
                 scrub:1.5,
                 pin:true
@@ -25,7 +25,7 @@ const Art = () => {
         .to('.masked-img',{
             scale:1.3,
             maskPosition: 'center',
-            maskSize: '300%',
+            maskSize: '400%',
             duration:1,
             ease:'power1.inOut'
         })
