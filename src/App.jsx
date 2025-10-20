@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Cocktails from './components/Cocktails'
 import About from './components/About'
+import Art from './components/Art'
 // import { useGSAP } from '@gsap/react'
 // import {ScrollTrigger, splitText} from 'gsap/all'
 
@@ -16,6 +17,7 @@ const App = () => {
        <Hero/>
        <Cocktails/>
        <About/>
+       <Art/>
     </main>
   )
 }
